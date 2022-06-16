@@ -1,16 +1,19 @@
 .container-1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
   grid-template-rows: repeat(4, max-content);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.circle-container {
+  display: grid;
+}
 .circle {
-  grid-column: 1;
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background-color: aquamarine;
-  position: relative;
+  background-color: #66a3ff;
   left: 160px;
   top: 20px;
 }
