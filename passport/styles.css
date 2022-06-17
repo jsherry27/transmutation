@@ -1,8 +1,7 @@
 .container-1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  line-height: 35px;
   grid-template-rows: repeat(4, max-content);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,12 +9,34 @@
   display: grid;
 }
 .circle {
+  display: grid;
   height: 70px;
   width: 70px;
   border-radius: 50%;
   background-color: #66a3ff;
-  left: 160px;
+
+  /* position: absolute;
   top: 20px;
+  left: 150px; */
+}
+.passport {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.location {
+  grid-row: 2;
+}
+.artist {
+  grid-column: 1;
+  grid-row: 3;
+}
+.era {
+  grid-column: 2;
+  grid-row: 3;
+}
+.age {
+  grid-row: 4;
 }
 .font-lg {
   font-size: 35px;
