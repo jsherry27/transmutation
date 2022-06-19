@@ -4,12 +4,13 @@
   line-height: 35px;
   grid-template-rows: repeat(4, max-content);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  column-gap: 20px;
 }
 .circle-container {
   display: grid;
+  justify-items: end;
 }
 .circle {
-  display: grid;
   height: 70px;
   width: 70px;
   border-radius: 50%;
