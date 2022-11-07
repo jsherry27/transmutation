@@ -5,7 +5,7 @@
   align-content: center;
   row-gap: 40px;
 }
-.shape-container {
+.container div:nth-of-type(1) {
   display: grid;
   justify-items: center;
   align-items: end;
@@ -21,18 +21,12 @@
 .triangle {
 } */
 
-.row {
+.container div:nth-of-type(2), div:nth-of-type(3) {
   display: grid;
   grid-template-columns: max-content repeat(3, minmax(max-content, 200px));
   align-items: center;
   column-gap: 20px;
   justify-content: center;
-}
-.text {
-  font-size: 35px;
-  font-weight: bold;
-  align-items: center;
-  margin: 0;
 }
 button {
   border: 1px solid transparent;
@@ -44,6 +38,15 @@ button {
 }
 button:active {
   filter: brightness(0.9);
+}
+p {
+  font-size: 35px;
+  font-weight: bold;
+  align-items: center;
+  margin: 0;
+}
+button{
+  font-size: 23px;
 }
 .blue {
   background-color: #7db5e8;
