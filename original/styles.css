@@ -28,9 +28,7 @@
   border-right: 125px solid transparent;
   border-bottom: 250px solid black;
 }
-.hide {
-  opacity: 0;
-}
+
 .shape,
 .color {
   display: grid;
