@@ -29,8 +29,7 @@
   border-bottom: 250px solid black;
 }
 
-.shape,
-.color {
+.container div:nth-of-type(2), div:nth-of-type(3){
   display: grid;
   grid-template-columns: max-content repeat(3, minmax(max-content, 200px));
   align-items: center;

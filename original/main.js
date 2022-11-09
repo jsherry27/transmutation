@@ -1,27 +1,17 @@
 const circleBtn = document.querySelector(".circle-btn");
-// circleBtn.addEventListener("click", (e) => {
-//   console.log("you clicked this cirlce");
-// });
 
 const squareBtn = document.querySelector(".square-btn");
-// squareBtn.addEventListener("click", (e) => {
-//   console.log("you clicked this square");
-// });
+
 const triangleBtn = document.querySelector(".triangle-btn");
-// triangleBtn.addEventListener("click", (e) => {
-//   console.log("you clicked this triangle");
-// });
 
 const blueEl = document.querySelector(".blue");
-// blueEl.classList.add("blue");
 
 const greenEl = document.querySelector(".green");
-// greenEl.classList.add("green");
 
 const redEl = document.querySelector(".red");
-// redEl.classList.add("red");
 
 const changeEl = document.querySelector(".change");
+
 circleBtn.addEventListener("click", (e) => {
     changeEl.classList.toggle("circle-formation")
     changeEl.classList.remove("square")
@@ -44,7 +34,7 @@ circleBtn.addEventListener("click", (e) => {
 })
 squareBtn.addEventListener("click", (e) => {
     changeEl.classList.toggle("square")
-    changeEl.classList.remove("circle")
+    changeEl.classList.remove("circle-formation")
     changeEl.classList.remove("triangle")
     blueEl.addEventListener("click", (e) => {
         changeEl.classList.toggle("blue")
