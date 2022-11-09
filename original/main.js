@@ -1,14 +1,35 @@
-const circleEl = document.querySelector(".circle-btn");
+const circleBtn = document.querySelector(".circle-btn");
+circleBtn.addEventListener("click", (e) => {
+  console.log("you clicked this cirlce");
+});
 
-const squareEl = document.querySelector(".square-btn");
+const squareBtn = document.querySelector(".square-btn");
+squareBtn.addEventListener("click", (e) => {
+  console.log("you clicked this square");
+});
+const triangleBtn = document.querySelector(".triangle-btn");
+triangleBtn.addEventListener("click", (e) => {
+  console.log("you clicked this triangle");
+});
 
-const triangleEl = document.querySelector(".triangle-btn");
+const blueEl = document.querySelector(".blue");
+blueEl.classList.add("blue");
 
-// JUSTIN: Ok this is the plan i'm thinking all you have
-// to do is when you click circle and blue the circle turns blue.
-// When you click green and red then it changes colors.
-// Same when you click square and red. it's a red square...
-// When you target square red it should add the red class..
+const greenEl = document.querySelector(".green");
+greenEl.classList.add("green");
+
+const redEl = document.querySelector(".red");
+redEl.classList.add("red");
+
+const changeshapeEl = document.querySelector(".shape-container");
+// circleBtn.addEventListener("click", (e) => {
+//   squareBtn.classList.add("square-btn");
+// });
+
+// JUSTIN: right now you know how to target the classes
+// now you simply need to have each class shape listen for when you click
+// the color and then it change to that color. and when you click
+// on another shape it changes to that shape.
 
 // const nameCheck = (name) => {
 //   console.log(`Hey ${name} how's it going?`);
