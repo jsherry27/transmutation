@@ -13,65 +13,53 @@ const redEl = document.querySelector(".red");
 const changeEl = document.querySelector(".change");
 
 circleBtn.addEventListener("click", (e) => {
-    changeEl.classList.toggle("circle-formation")
-    changeEl.classList.remove("square")
-    changeEl.classList.remove("triangle")
-    blueEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("blue")
-        changeEl.classList.remove("green")
-        changeEl.classList.remove("red")
-    })
-    greenEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("green")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("red")
-    })
-    redEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("red")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("green")
-    })
-})
+  changeEl.classList.toggle("circle-formation");
+  changeEl.classList.remove("square", "triangle");
+  blueEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("blue");
+    changeEl.classList.remove("green", "red");
+  });
+  greenEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("green");
+    changeEl.classList.remove("blue", "red");
+  });
+  redEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("red");
+    changeEl.classList.remove("blue", "green");
+  });
+});
 squareBtn.addEventListener("click", (e) => {
-    changeEl.classList.toggle("square")
-    changeEl.classList.remove("circle-formation")
-    changeEl.classList.remove("triangle")
-    blueEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("blue")
-        changeEl.classList.remove("green")
-        changeEl.classList.remove("red")
-    })
-    greenEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("green")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("red")
-    })
-    redEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("red")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("green")
-    })
-})
+  changeEl.classList.toggle("square");
+  changeEl.classList.remove("circle-formation", "triangle");
+  blueEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("blue");
+    changeEl.classList.remove("green", "red");
+  });
+  greenEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("green");
+    changeEl.classList.remove("blue", "red");
+  });
+  redEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("red");
+    changeEl.classList.remove("blue", "green");
+  });
+});
 triangleBtn.addEventListener("click", (e) => {
-    changeEl.classList.toggle("triangle")
-    changeEl.classList.remove("square");
-    changeEl.classList.remove("circle-formation");
-    blueEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("blue")
-        changeEl.classList.remove("green")
-        changeEl.classList.remove("red")
-    })
-    greenEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("green")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("red")
-    })
-    redEl.addEventListener("click", (e) => {
-        changeEl.classList.toggle("red")
-        changeEl.classList.remove("blue")
-        changeEl.classList.remove("green")
-    })
-})
+  changeEl.classList.toggle("triangle");
+  changeEl.classList.remove("square", "circle-formation");
+  blueEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("blue");
+    changeEl.classList.remove("green", "red");
+  });
+  greenEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("green");
+    changeEl.classList.remove("blue", "red");
+  });
+  redEl.addEventListener("click", (e) => {
+    changeEl.classList.toggle("red");
+    changeEl.classList.remove("blue", "green");
+  });
+});
 
 // Below is what I started with
 
@@ -80,7 +68,6 @@ triangleBtn.addEventListener("click", (e) => {
 //         circleBtn.classList.add("blue")
 //     })
 // });
-
 
 // JUSTIN: right now you know how to target the classes
 // now you simply need to have each class shape listen for when you click
