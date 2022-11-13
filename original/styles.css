@@ -5,6 +5,7 @@
   align-content: center;
   row-gap: 40px;
 }
+
 .container div:nth-of-type(1) {
   display: grid;
   justify-items: center;
